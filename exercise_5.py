@@ -16,7 +16,7 @@ def dzielenie(a,b):
     else:
         return a / b
 
-d = ("34")
+d = ("")
 while d.lower() != "x":
     a = input("Podaj pierwsza liczbe: ")
     b = input("Podaj druga liczbe: ")
