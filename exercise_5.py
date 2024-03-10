@@ -1,11 +1,12 @@
 class NieprawidlowaWartosc(Exception):
     pass
 
-def dzielenie(a,b):
+
+def dzielenie(x, y):
 
     try:
-        a,b = int(a), int(b)
-        if b == 0:
+        x, y = int(x), int(y)
+        if y == 0:
             raise NieprawidlowaWartosc("Nie mozna dzielic przez 0!")
 
     except ValueError:
@@ -14,12 +15,17 @@ def dzielenie(a,b):
     except NieprawidlowaWartosc as e:
         return str(e)
     else:
-        return a / b
+        return x / y
 
-d = ("")
-while d.lower() != "x":
+
+d = ""
+
+
+while True:
     a = input("Podaj pierwsza liczbe: ")
     b = input("Podaj druga liczbe: ")
-    print(dzielenie(a,b))
+    print(dzielenie(a, b))
     d = input("Wcisnij x aby zakonczyc lub ENTER klawisz aby kontynuowac: ")
+    if d == "x":
+        break
     print("\n")
