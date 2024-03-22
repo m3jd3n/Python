@@ -48,11 +48,11 @@ class Library:
 
     def list_books(self):
         for book in self.books:
-            print(book.title)
+            print(f"Title: {book.title} Author: {book.author.name} Year: {book.year} Status: {book.status}")
 
     def list_authors(self):
         for author in self.authors:
-            print(author.name)
+            print(f"Name: {author.name} DOB: {author.date_of_birth}")
 
 
 
