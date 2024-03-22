@@ -20,7 +20,6 @@ def create_order(shop, basket, order_database):
         print("Basket is empty")
         return
 
-
 def main():
     shop = shop_structure.Shop()
     shop.add_product(shop_structure.Product("Apple", 10))
